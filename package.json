@@ -1,0 +1,24 @@
+{
+  "name": "pawpal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PawPal — a pet adoption app built with Next.js, React, and the Context API.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.5.19",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.21",
+    "eslint": "9.30.0",
+    "eslint-config-next": "15.5.19",
+    "postcss": "^8.5.10",
+    "tailwindcss": "3.4.17"
+  }
+}

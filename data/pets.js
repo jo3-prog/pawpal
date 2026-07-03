@@ -1,0 +1,173 @@
+
+const pets = [
+  {
+    id: 1,
+    name: "Bella",
+    type: "Dog",
+    breed: "Labrador Retriever",
+    age: "2 years",
+    gender: "Female",
+    description:
+      "Friendly and energetic, Bella loves kids, fetch, and long walks. She's quick to learn new tricks and would do great in an active household.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["dog", "friendly", "labrador", "energetic", "kids"],
+  },
+  {
+    id: 2,
+    name: "Milo",
+    type: "Cat",
+    breed: "Domestic Shorthair",
+    age: "1 year",
+    gender: "Male",
+    description:
+      "Milo is a curious, affectionate cat who loves sunbeams and chasing string toys. He's litter-trained and gets along well with other cats.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["cat", "curious", "shorthair", "affectionate"],
+  },
+  {
+    id: 3,
+    name: "Rocky",
+    type: "Dog",
+    breed: "Beagle",
+    age: "3 years",
+    gender: "Male",
+    description:
+      "Rocky is a happy-go-lucky beagle with a great nose and an even better howl. He's house-trained and loves company.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["dog", "beagle", "playful", "loyal"],
+  },
+  {
+    id: 4,
+    name: "Luna",
+    type: "Cat",
+    breed: "Siamese",
+    age: "4 years",
+    gender: "Female",
+    description:
+      "Luna is a vocal, elegant Siamese who bonds closely with her people. She prefers a quieter home without small children.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["cat", "siamese", "vocal", "gentle"],
+  },
+  {
+    id: 5,
+    name: "Charlie",
+    type: "Dog",
+    breed: "Golden Retriever",
+    age: "5 months",
+    gender: "Male",
+    description:
+      "Charlie is a goofy golden retriever puppy who is still learning the ropes. He needs a patient family ready for puppy training.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["dog", "golden retriever", "puppy", "playful"],
+  },
+  {
+    id: 6,
+    name: "Coco",
+    type: "Rabbit",
+    breed: "Holland Lop",
+    age: "1 year",
+    gender: "Female",
+    description:
+      "Coco is a gentle, floppy-eared rabbit who loves leafy greens and quiet afternoons. She's litter-trained and enjoys supervised hopping time.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["rabbit", "holland lop", "gentle", "quiet"],
+  },
+  {
+    id: 7,
+    name: "Max",
+    type: "Dog",
+    breed: "German Shepherd",
+    age: "4 years",
+    gender: "Male",
+    description:
+      "Max is intelligent, loyal, and protective. He's had basic obedience training and does best with an experienced dog owner.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["dog", "german shepherd", "loyal", "smart"],
+  },
+  {
+    id: 8,
+    name: "Daisy",
+    type: "Cat",
+    breed: "Maine Coon",
+    age: "2 years",
+    gender: "Female",
+    description:
+      "Daisy is a fluffy, easy-going Maine Coon who loves being brushed and watching birds from the windowsill.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["cat", "maine coon", "fluffy", "calm"],
+  },
+  {
+    id: 9,
+    name: "Buddy",
+    type: "Dog",
+    breed: "Labrador Retriever",
+    age: "6 years",
+    gender: "Male",
+    description:
+      "Buddy is a calm senior lab who is happiest curled up next to his favorite person. He's a wonderful low-energy companion.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["dog", "labrador", "senior", "calm"],
+  },
+  {
+    id: 10,
+    name: "Pepper",
+    type: "Bird",
+    breed: "Cockatiel",
+    age: "2 years",
+    gender: "Male",
+    description:
+      "Pepper is a whistling, social cockatiel who loves head scratches and learning new tunes. Looking for a home with daily interaction.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["bird", "cockatiel", "social", "whistler"],
+  },
+  {
+    id: 11,
+    name: "Willow",
+    type: "Cat",
+    breed: "Domestic Longhair",
+    age: "3 years",
+    gender: "Female",
+    description:
+      "Willow is shy at first but warms up quickly into a velcro cat. She'd thrive in a calm home without other pets.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["cat", "longhair", "shy", "affectionate"],
+  },
+  {
+    id: 12,
+    name: "Zeus",
+    type: "Dog",
+    breed: "Boxer",
+    age: "1 year",
+    gender: "Male",
+    description:
+      "Zeus is a bouncy, muscular boxer with a heart of gold. He needs a yard to zoom around and an active family.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["dog", "boxer", "energetic", "playful"],
+  },
+  {
+    id: 13,
+    name: "Pumpkin",
+    type: "Rabbit",
+    breed: "Netherland Dwarf",
+    age: "8 months",
+    gender: "Male",
+    description:
+      "Pumpkin is a tiny bundle of energy who loves to binky around the room. He does well with gentle handling.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["rabbit", "netherland dwarf", "small", "energetic"],
+  },
+  {
+    id: 14,
+    name: "Olive",
+    type: "Cat",
+    breed: "Tabby",
+    age: "5 years",
+    gender: "Female",
+    description:
+      "Olive is an independent tabby who enjoys puzzle feeders and lounging in cardboard boxes. A relaxed home is her ideal match.",
+    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    keywords: ["cat", "tabby", "independent", "playful"],
+  },
+];
+
+export default pets;

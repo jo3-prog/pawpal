@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Special+Elite&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-body;
+    background-image: radial-gradient(
+      circle,
+      rgba(31, 42, 36, 0.06) 1px,
+      transparent 1px
+    );
+    background-size: 18px 18px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+  }
+
+  /* Visible keyboard focus everywhere, including custom controls */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid theme("colors.marigold.DEFAULT");
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* The kennel-card signature look used for every pet listing */
+  .kennel-card {
+    @apply relative bg-card rounded-md shadow-card border border-line/60 overflow-hidden flex flex-col;
+  }
+
+  .kennel-card::before {
+    content: "";
+    @apply absolute top-0 left-0 right-0 h-1.5;
+    background-image: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 6px,
+      rgba(31, 42, 36, 0.18) 6px,
+      rgba(31, 42, 36, 0.18) 7px
+    );
+  }
+
+  /* Rubber-stamp style status badge, e.g. AVAILABLE / ADOPTED */
+  .ink-stamp {
+    @apply font-stamp uppercase tracking-widest text-xs px-2.5 py-1 border-2 rounded-sm rotate-[-4deg] inline-block select-none;
+  }
+
+  .ink-stamp--available {
+    @apply border-pine text-pine;
+  }
+
+  .ink-stamp--applied {
+    @apply border-coral text-coral;
+  }
+
+  .tag-number {
+    @apply font-stamp text-xs tracking-wider text-ink/50;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-pine text-paper font-display font-semibold px-4 py-2.5 rounded-md transition-colors hover:bg-pine-dark disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent border-2 border-pine text-pine font-display font-semibold px-4 py-2.5 rounded-md transition-colors hover:bg-pine hover:text-paper;
+  }
+
+  .input-field {
+    @apply w-full bg-card border border-line rounded-md px-3.5 py-2.5 text-ink placeholder:text-ink/40 focus:border-pine transition-colors;
+  }
+
+  .paw-divider::before {
+    content: "\1F43E";
+    @apply mx-1.5 text-[10px] align-middle opacity-50;
+  }
+}

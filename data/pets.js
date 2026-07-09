@@ -21,7 +21,7 @@ const pets = [
     gender: "Male",
     description:
       "Milo is a curious, affectionate cat who loves sunbeams and chasing string toys. He's litter-trained and gets along well with other cats.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://plus.unsplash.com/premium_photo-1663127210166-797379d03f3e?q=80&w=441&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["cat", "curious", "shorthair", "affectionate"],
   },
   {
@@ -33,7 +33,7 @@ const pets = [
     gender: "Male",
     description:
       "Rocky is a happy-go-lucky beagle with a great nose and an even better howl. He's house-trained and loves company.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["dog", "beagle", "playful", "loyal"],
   },
   {
@@ -45,7 +45,7 @@ const pets = [
     gender: "Female",
     description:
       "Luna is a vocal, elegant Siamese who bonds closely with her people. She prefers a quieter home without small children.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1568309386325-ef86f13ac533?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["cat", "siamese", "vocal", "gentle"],
   },
   {
@@ -57,7 +57,7 @@ const pets = [
     gender: "Male",
     description:
       "Charlie is a goofy golden retriever puppy who is still learning the ropes. He needs a patient family ready for puppy training.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://plus.unsplash.com/premium_photo-1666777247416-ee7a95235559?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["dog", "golden retriever", "puppy", "playful"],
   },
   {
@@ -69,7 +69,7 @@ const pets = [
     gender: "Female",
     description:
       "Coco is a gentle, floppy-eared rabbit who loves leafy greens and quiet afternoons. She's litter-trained and enjoys supervised hopping time.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1650290145779-e05602773fc7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["rabbit", "holland lop", "gentle", "quiet"],
   },
   {
@@ -81,7 +81,7 @@ const pets = [
     gender: "Male",
     description:
       "Max is intelligent, loyal, and protective. He's had basic obedience training and does best with an experienced dog owner.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1662939092439-67d3d9d733b4?q=80&w=813&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["dog", "german shepherd", "loyal", "smart"],
   },
   {
@@ -93,7 +93,7 @@ const pets = [
     gender: "Female",
     description:
       "Daisy is a fluffy, easy-going Maine Coon who loves being brushed and watching birds from the windowsill.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1606213651356-0272cc0becd2?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["cat", "maine coon", "fluffy", "calm"],
   },
   {
@@ -105,7 +105,7 @@ const pets = [
     gender: "Male",
     description:
       "Buddy is a calm senior lab who is happiest curled up next to his favorite person. He's a wonderful low-energy companion.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1625139649757-c7c9888dfcb1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["dog", "labrador", "senior", "calm"],
   },
   {
@@ -117,7 +117,7 @@ const pets = [
     gender: "Male",
     description:
       "Pepper is a whistling, social cockatiel who loves head scratches and learning new tunes. Looking for a home with daily interaction.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1458410489211-ba19aa2f2902?q=80&w=892&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["bird", "cockatiel", "social", "whistler"],
   },
   {
@@ -129,7 +129,7 @@ const pets = [
     gender: "Female",
     description:
       "Willow is shy at first but warms up quickly into a velcro cat. She'd thrive in a calm home without other pets.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1644675531368-8331c0af21e2?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["cat", "longhair", "shy", "affectionate"],
   },
   {
@@ -141,7 +141,7 @@ const pets = [
     gender: "Male",
     description:
       "Zeus is a bouncy, muscular boxer with a heart of gold. He needs a yard to zoom around and an active family.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1583033733163-300920f360c5?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["dog", "boxer", "energetic", "playful"],
   },
   {
@@ -153,7 +153,7 @@ const pets = [
     gender: "Male",
     description:
       "Pumpkin is a tiny bundle of energy who loves to binky around the room. He does well with gentle handling.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["rabbit", "netherland dwarf", "small", "energetic"],
   },
   {
@@ -165,7 +165,7 @@ const pets = [
     gender: "Female",
     description:
       "Olive is an independent tabby who enjoys puzzle feeders and lounging in cardboard boxes. A relaxed home is her ideal match.",
-    image: "https://plus.unsplash.com/premium_photo-1683134036144-82b0a3d50f11?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1667518158890-0a6cf60de601?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     keywords: ["cat", "tabby", "independent", "playful"],
   },
 ];

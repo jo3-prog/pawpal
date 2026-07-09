@@ -24,17 +24,17 @@ function readFromStorage(key, fallback) {
 }
 
 export function PetProvider({ children }) {
-  // ── Pet data ─────────────────────────────────────────────────────────────
+  // ── Pet data 
   const [pets, setPets] = useState(staticPets);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [dataSource, setDataSource] = useState("static");
 
-  // ── Search + filter state ─────────────────────────────────────────────────
+  // ── Search + filter state 
   const [searchTerm, setSearchTerm] = useState("");
   const [filters, setFilters] = useState({ type: "All", breed: "All" });
 
-  // ── Persistence state (hydrated from localStorage after mount) ───────────
+  // ── Persistence state (hydrated from localStorage after mount)
   const [favorites, setFavorites] = useState([]);
   const [applications, setApplications] = useState([]);
   const [hydrated, setHydrated] = useState(false);
@@ -55,7 +55,6 @@ export function PetProvider({ children }) {
     window.localStorage.setItem(APPLICATIONS_KEY, JSON.stringify(applications));
   }, [applications, hydrated]);
 
-  // ── Live data fetch ───────────────────────────────────────────────────────
   const fetchPets = useCallback(async ({ type, breed } = {}) => {
     setLoading(true);
     setError(null);
@@ -64,14 +63,14 @@ export function PetProvider({ children }) {
       if (type && type !== "All") params.set("type", type);
       if (breed && breed !== "All") params.set("breed", breed);
 
-      const response = await fetch(`/api/pets?${params}`);
-      if (!response.ok) throw new Error(`API responded with ${response.status}`);
+      // const response = await fetch(`/api/pets?${params}`);
+      // if (!response.ok) throw new Error(`API responded with ${response.status}`);
 
-      const data = await response.json();
-      setPets(data.pets ?? staticPets);
-      setDataSource(data.source ?? "api");
+      // const data = await response.json();
+      // setPets(data.pets ?? staticPets);
+      // setDataSource(data.source ?? "api");
 
-      if (data.warning) console.warn("[PawPal]", data.warning);
+      // if (data.warning) console.warn("[PawPal]", data.warning);
     } catch (err) {
       console.error("[PawPal] fetchPets error:", err);
       setError("Could not load live pet data. Showing local pets instead.");
@@ -82,12 +81,10 @@ export function PetProvider({ children }) {
     }
   }, []);
 
-  // Kick off the initial fetch once the component mounts on the client.
   useEffect(() => {
     fetchPets();
   }, [fetchPets]);
 
-  // ── Favorites ─────────────────────────────────────────────────────────────
   function toggleFavorite(petId) {
     setFavorites((current) =>
       current.includes(petId)
@@ -100,7 +97,6 @@ export function PetProvider({ children }) {
     return favorites.includes(petId);
   }
 
-  // ── Adoption applications ─────────────────────────────────────────────────
   function hasApplied(petId) {
     return applications.some((app) => app.petId === petId);
   }
@@ -124,7 +120,7 @@ export function PetProvider({ children }) {
     );
   }
 
-  // ── Derived filter data ───────────────────────────────────────────────────
+  // ── Derived filter data 
   const types = useMemo(() => {
     const unique = new Set(pets.map((pet) => pet.type));
     return ["All", ...Array.from(unique).sort()];
